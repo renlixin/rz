@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta name="publisher" content="TideCMS 8.5">
+<meta charset="utf-8">
+  <title>中国投融资协会</title>
+  <script>
+    function centerBox() {
+      if(window.navigator.appVersion.indexOf('Windows') > -1) {
+        document.body.style.width = "auto"
+        document.querySelector('.sq').style.height = '447px'
+        document.querySelector('.sq').style.paddingBottom = '0'
+      } else {
+        //  if (window.navigator.appVersion.indexOf('Android') > -1 || window.navigator.appVersion.indexOf('iPhone') > -1 || window.navigator.appVersion.indexOf('iPad') > -1)
+        if (window.getComputedStyle) {
+          //var computedMargin = Math.abs(parseFloat(window.getComputedStyle(document.querySelector('.wrap'), null).marginRight)) || 220
+          document.querySelector('.sq').style.height = 'auto'
+          document.querySelector('.sq').style.paddingBottom = '30px'
+          console.log(window.getComputedStyle(document.querySelector('.wrap'), null).marginRight)
+          document.body.style.width = (document.documentElement.clientWidth || document.body.clientWidth) + 220 + 'px'
+        } else {
+          //var currentMargin = Math.abs(parseFloat(document.querySelector('.wrap').currentStyle['marginRight'])) || 220
+          document.body.style.width = (document.documentElement.clientWidth || document.body.clientWidth) + 220 + 'px'
+        }
+      }
+    }
+    window.onload = centerBox
+    window.addEventListener('resize', centerBox, false)
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="wrap">
+      <h1 class="logo"><a href="#">中国投融资协会</a></h1>
+      <div class="zscx">证书查询</div>
+    </div>
+  </div>
+  <div class="banner"></div>
+  <div class="query">
+    <div class="wrap">
+      <div class="query_c">
+        <span>证书查询：</span>
+        <input type="text" value="请输入您的ID" name="ID" class="idh">
+        <input type="text" value="请输入您的密码" name="密码" class="mm">
+        <div class="btn">查询</div>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <div class="wrap">
+      <ul>
+        <li>
+          <a>
+            <span class="icon-s1"></span>
+            <h3>协会宗旨</h3>
+            <p>建立香港及大陆的金融投融资的行业标准、考核及鉴定投融资专业人才</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon-s2"></span>
+            <h3>融资咨询师</h3>
+            <p>FC持证人活跃于企业集团投资部、投行、基金及私募、券商、银行、财务及法律顾问等核心工作岗位</p>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="icon-s3"></span>
+            <h3>发展方向</h3>
+            <p>FC资格获得者具备融资基础知识和融资渠道，能够掌握中外机构普遍使用的融资手段</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="zsys">
+    <div class="wrap">
+      <h2>FC证书优势</h2>
+      <ul>
+        <li>
+          <div class="pic">
+            <a>
+              <img src="img/zsys1.jpg"/>
+              <span>岗位实操能力优势</span>
+            </a>
+        </div>
+        <p>FC考试内容紧密联系实际案例，侧重于提高从业人员的实务技能并迅速应用到实际工作中，使FC持证人达到高效、系统和专业的职业水平。</p>
+        </li>
+        <li>
+          <div class="pic">
+            <a>
+              <img src="img/zsys2.jpg"/>
+              <span>标准规范化的职业素质优势</span>
+            </a>
+        </div>
+        <p>FC资格认证旨在推动融资行业的标准化与规范化，提高执业人员的从业水平，FC持证人在工作流程与方法中能够遵循标准化体系，提高效率与正确率。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="sq">
+    <div class="wrap">
+      <h2>FC唯一授权</h2>
+      <p class="ms">大泉银华（北京）投资有限公司为中国地区（融资咨询师）培训及证书发放的唯一代理机构。</p>
+      <dl>
+        <dt><img src="img/sqs.png" /></dt>
+        <dd>
+          <h3>大泉银华（北京）投资有限公司</h3>
+          <p>大泉银华公司将秉承“立足北京、面向全国”的发展战略，配合国家金融战略总格局，结合产业经济发展方向，将大泉银华公司优良的金融机构资源和超前的资本运作理念服务于优势产业，并积极探索、挖掘产业的整体价值，促进产业结构调整和经济增长方式转变。在为政府、企业提供专业化、高水平的融资服务，创造良好的经济与社会效益。</p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div class="czsg">
+    <div class="wrap">
+       <h2>如何成为fc持证人？</h2>
+      <p class="ms">通过FC专业的培训和FC的考试能获得FC证书。</p>
+      <ul>
+        <li><a href="">
+          <img src="img/icon4.png" alt="">
+          <span>通过FC专业的培训</span>
+        </a></li>
+        <li class="ks"><a href="">
+          <img src="img/icon5.png" alt="">
+          <span>通过FC专业的考试</span>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright 2017 备案/许可证编号：京ICP备14058444号</p>
+    <p>网站运营：中国投融资协会, All Rights Reserved</p>
+  </div>
+</body>
+</html>
